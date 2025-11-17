@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather web app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-sm-12 p-0 ">
+                <div class="card mx-auto p-5" id="div">
+                    <div class="d-flex gap-3">
+                        <input class="rounded-2 border-0" type="text" name="" id="text" placeholder="Enter city name">
+                        <button class="border-0"><i class="fa-solid fa-magnifying-glass"
+                                onclick="search()"></i></button>
+                    </div>
+                    <div class="mt-4 mx-auto">
+                        <img src="images/sun2-removebg-preview.png" height="160px" width="200px" alt=""
+                            style="object-fit: cover;">
+                    </div>
+                    <h3 class="text-center mt-2 text-dark"><span id="temp">--</span>℃</h3>
+                    <h1 class="text-center "><span id="city">--</span>,India</h1>
+                    <div class="d-flex justify-content-between  mt-4">
+                        <div class="text-start d-flex gap-3">
+                            <div class="icon"><i class="fa-solid fa-water"></i></div>
+                            <div>
+                                <p class="p-0 m-0 fw-semibold"><span id="humidity">--</span>%</p>
+                                <p class="p-0 m-0 fw-semibold">Humidity</p>
+                            </div>
+                        </div>
+                        <div class="text-start d-flex gap-3">
+                            <div class="icon"> <i class="fa-solid fa-wind "></i></div>
+                            <div>
+                                <p class="p-0 m-0 fw-semibold"><span id="windspeed">--</span>km/h</p>
+                                <p class="p-0 m-0 fw-semibold">Wind speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+
+</html>
