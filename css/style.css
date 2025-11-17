@@ -33,3 +33,10 @@
     background-size: cover;
     background-position: top;
 }
+
+@media (max-width:576px) {
+    #div {
+        height: 80vh;
+        width: 100%;
+    }
+}
